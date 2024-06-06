@@ -10,18 +10,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    flex-direction: column;
 }
 
-.top-right {
+header {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .brand {
     color: #fff;
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 5px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 1rem;
 }
 
 .container {
